@@ -9,8 +9,8 @@ class BslngRecipe(ConanFile):
     generators = "CMakeDeps"
 
     def requirements(self):
-        self.requires("jansson/2.14")
-        self.requires("libuv/1.49.1")
+        self.requires("jansson/[>=2.10 <3]")
+        self.requires("libuv/[>=1.10.2 <2]")
 
     def build_requirements(self):
         self.tool_requires("cmake/[~3.23]")
